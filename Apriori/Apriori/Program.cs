@@ -9,13 +9,13 @@ namespace Apriori
 {
     class Program
     {
-
-        static List<ItemSet> transactions; //list of itemsets
+        //list of items and min support
+        static List<ItemSet> transactions; 
         static List<ItemSet> candidateItemsets;
-        static List<ItemSet> freqitemsets; //list of items and min support
-        static List<ItemSet> allfreqItemsets; //list of items and min support
-        static Dictionary<ItemSet, List<ItemSet>> closeditemsets; //list of items and min support
-        static List<ItemSet> maxitemsets; //list of items and min support
+        static List<ItemSet> freqitemsets; 
+        static List<ItemSet> allfreqItemsets; 
+        static Dictionary<ItemSet, List<ItemSet>> closeditemsets; 
+        static List<ItemSet> maxitemsets; 
         static double minsup = 50;
         static void Main(string[] args)
         {
