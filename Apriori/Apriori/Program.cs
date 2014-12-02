@@ -10,12 +10,12 @@ namespace Apriori
     class Program
     {
 
-        static List<ItemSet> transactions = new List<ItemSet>(); //list of itemsets
-        static List<ItemSet> candidateItemsets = new List<ItemSet>();
-        static List<ItemSet> freqitemsets = new List<ItemSet>(); //list of items and min support
-        static List<ItemSet> allfreqItemsets = new List<ItemSet>(); //list of items and min support
-        static Dictionary<ItemSet, List<ItemSet>> closeditemsets = new Dictionary<ItemSet, List<ItemSet>>(); //list of items and min support
-        static List<ItemSet> maxitemsets = new List<ItemSet>(); //list of items and min support
+        static List<ItemSet> transactions; //list of itemsets
+        static List<ItemSet> candidateItemsets;
+        static List<ItemSet> freqitemsets; //list of items and min support
+        static List<ItemSet> allfreqItemsets; //list of items and min support
+        static Dictionary<ItemSet, List<ItemSet>> closeditemsets; //list of items and min support
+        static List<ItemSet> maxitemsets; //list of items and min support
         static double minsup = 50;
         static void Main(string[] args)
         {
